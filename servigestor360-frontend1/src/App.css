@@ -1,0 +1,84 @@
+/* Contenedor general de la aplicación */
+.app {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Encabezado principal */
+.app-header {
+  padding: 28px 20px 22px;
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Título principal */
+.app-header h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+/* Subtítulo */
+.app-header p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 17px;
+}
+
+/* Menú de navegación */
+.app-menu {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* Botones del menú */
+.app-menu button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 14px;
+  background-color: #e2e8f0;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.app-menu button:hover {
+  transform: translateY(-2px);
+  background-color: #cbd5e1;
+}
+
+/* Botón activo del menú */
+.app-menu button.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.28);
+}
+
+/* Contenido principal */
+main {
+  padding-top: 28px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 32px;
+  }
+
+  .app-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-menu button {
+    width: 220px;
+  }
+}

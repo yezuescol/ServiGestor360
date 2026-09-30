@@ -1,0 +1,48 @@
+# ==============================
+# BACKEND - SPRING BOOT / MAVEN
+# ==============================
+
+target/
+*.class
+*.log
+
+# ==============================
+# FRONTEND - REACT / VITE
+# ==============================
+
+node_modules/
+dist/
+
+# Variables de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==============================
+# EDITORES
+# ==============================
+
+.vscode/
+.idea/
+.classpath
+.project
+.settings/
+
+# ==============================
+# SISTEMA OPERATIVO
+# ==============================
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ==============================
+# ARCHIVOS TEMPORALES
+# ==============================
+
+*.tmp
+*.temp
+*.swp
+*.swo

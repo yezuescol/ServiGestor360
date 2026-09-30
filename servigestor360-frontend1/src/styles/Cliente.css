@@ -1,0 +1,399 @@
+/* Contenedor principal del módulo Cliente */
+.cliente-module {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+/* Encabezado del módulo */
+.module-header {
+  margin-bottom: 24px;
+  padding: 28px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Etiqueta superior del módulo */
+.module-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Título del módulo */
+.module-header h2 {
+  margin: 0;
+  font-size: 34px;
+  color: #0f172a;
+}
+
+/* Descripción del módulo */
+.module-header p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* Tarjetas de contenido */
+.card {
+  padding: 26px;
+  margin-bottom: 25px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
+}
+
+/* Títulos de las tarjetas */
+.card h3 {
+  margin: 0 0 20px;
+  color: #0f172a;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Formulario en dos columnas */
+.cliente-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* Grupo de cada campo */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Campo que ocupa todo el ancho */
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+/* Etiquetas del formulario */
+.form-group label {
+  margin-bottom: 7px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Campos de entrada */
+.form-group input {
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-size: 15px;
+}
+
+/* Campo seleccionado */
+.form-group input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* Contenedor de botones */
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+/* Botones generales */
+.form-actions button,
+.cliente-table button {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Botón guardar */
+.btn-primary {
+  padding: 12px 22px;
+  border-radius: 12px;
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* Botón limpiar */
+.btn-secondary {
+  padding: 12px 22px;
+  border-radius: 12px;
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+/* Encabezado de la tabla */
+.table-title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Texto descriptivo de la tabla */
+.table-title p {
+  margin: 0;
+  color: #64748b;
+}
+
+/* Tabla de clientes */
+.cliente-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* Encabezado de tabla */
+.cliente-table thead {
+  background-color: #1e293b;
+}
+
+/* Celdas del encabezado */
+.cliente-table th {
+  padding: 15px;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Celdas de datos */
+.cliente-table td {
+  padding: 15px;
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Efecto al pasar el mouse */
+.cliente-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Botón editar */
+.btn-edit {
+  margin-right: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+/* Botón eliminar */
+.btn-delete {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .cliente-form {
+    grid-template-columns: 1fr;
+  }
+
+  .module-header h2 {
+    font-size: 28px;
+  }
+
+  .table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    border-radius:12px;
+
+}
+
+table{
+
+    min-width:1300px;
+
+}
+
+/* =======================================
+   ORDEN DE SERVICIO
+======================================= */
+
+.orden-servicio-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.orden-documento {
+  padding: 32px;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.orden-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 3px solid #1e293b;
+}
+
+.orden-encabezado h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.orden-encabezado p {
+  margin: 6px 0 0;
+  color: #64748b;
+}
+
+.orden-numero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.orden-numero strong {
+  font-size: 18px;
+}
+
+.orden-numero span {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+.orden-seccion {
+  margin-top: 28px;
+}
+
+.orden-seccion h3 {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #cbd5e1;
+  text-align: left;
+  font-size: 20px;
+}
+
+.orden-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+.orden-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.orden-grid span {
+  color: #475569;
+}
+
+.orden-table {
+  min-width: 1200px;
+}
+
+.orden-total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: #e2e8f0;
+  font-size: 20px;
+}
+
+.orden-total strong {
+  font-size: 26px;
+  color: #1d4ed8;
+}
+
+.orden-firmas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 70px;
+}
+
+.orden-firmas > div {
+  text-align: center;
+}
+
+.firma-linea {
+  border-top: 1px solid #0f172a;
+  margin-bottom: 10px;
+}
+
+.orden-acciones {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .orden-encabezado {
+    flex-direction: column;
+  }
+
+  .orden-numero {
+    align-items: flex-start;
+  }
+
+  .orden-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .orden-firmas {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .orden-documento,
+  .orden-documento * {
+    visibility: visible;
+  }
+
+  .orden-documento {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .orden-acciones {
+    display: none;
+  }
+
+  .orden-table {
+    min-width: 0;
+  }
+
+  .table-container {
+    overflow: visible;
+  }
+}
+
+}
