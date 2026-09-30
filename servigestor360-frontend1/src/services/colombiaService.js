@@ -1,6 +1,7 @@
+import { API_BASE_URL } from "../config/api";
 import axios from 'axios'
 
-const API = 'http://localhost:8080/api/publica/colombia'
+const API = `${API_BASE_URL}/api/publica/colombia`;
 
 export const getDepartamentos = () =>
   axios.get(`${API}/departamentos`)

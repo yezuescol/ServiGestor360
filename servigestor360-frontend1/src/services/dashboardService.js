@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../config/api";
 import axios from "axios";
 
 /*
@@ -21,7 +22,7 @@ import axios from "axios";
  * y escalable.
  */
 
-const API_URL = "http://localhost:8080/api/dashboard";
+const API_URL = `${API_BASE_URL}/api/dashboard`;
 
 /*
  * ==========================================================

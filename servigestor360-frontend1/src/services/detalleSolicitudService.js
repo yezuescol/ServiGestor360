@@ -1,6 +1,7 @@
+import { API_BASE_URL } from "../config/api";
 import axios from 'axios'
 
-const API = 'http://localhost:8080/api/detalles'
+const API = `${API_BASE_URL}/api/detalles`;
 
 const getAuthHeaders = () => {
 
