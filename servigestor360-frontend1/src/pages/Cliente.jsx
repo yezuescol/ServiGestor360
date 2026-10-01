@@ -10,7 +10,7 @@ import {
   crearCliente,
   actualizarCliente,
   eliminarCliente
-} from '../services/clienteService'
+} from "../services/ClienteService";
 
 // Importa estilos del módulo Cliente
 import '../styles/Cliente.css'

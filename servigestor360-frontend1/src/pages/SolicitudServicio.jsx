@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 
 // Importa servicio de clientes para llenar el select
-import { getClientes } from '../services/clienteService'
+import { getClientes } from "../services/ClienteService";
 
 // Importa servicios de solicitudes
 import {
